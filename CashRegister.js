@@ -15,8 +15,7 @@ function checkCashRegister(price, cash, cid) {
       return {status:"CLOSED", change:cid}
     }else{
       return {status:"OPEN", change:changeAmount}
-    }
-    
+    } 
   }
   
   const getMaxIndex = (devuelta,coinsPrice) => {
@@ -83,8 +82,7 @@ function checkCashRegister(price, cash, cid) {
          devueltaAmountOfCoins.coinAmount > cidAmountOfCoins)
          {
         return getChangeAmount(devuelta,cid,coinsName,--maxIndex,result)
-      }
-      
+      } 
       return result;
   }
   
@@ -97,7 +95,6 @@ function checkCashRegister(price, cash, cid) {
       cant++;
       devueltaEnEnteros= devueltaEnEnteros - coinValue;
     }
-  
     return {coinAmount:cant,coin:coinValue/100,excedente:devueltaEnEnteros/100}
   }
   
